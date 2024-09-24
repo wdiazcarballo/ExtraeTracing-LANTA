@@ -11,8 +11,8 @@ module load libtool/2.4.7
 ./bootstrap
 ```
   
-3. Configure command
-   ```bash
+2. Configure command
+```bash
    CC=cc CXX=CC ./configure \
    --build=x86_64-suse-linux \
    --host=x86_64-suse-linux   \
@@ -29,8 +29,8 @@ module load libtool/2.4.7
    --with-boost=/lustrefs/disk/modules/easybuild/software/Boost/1.82.0-cpeCray-23.03  \
    --without-unwind \
    --without-dyninst
-   ```
-4. Make and Install
+```
+3. Make and Install
    ```bash
    make -j4
    make install
