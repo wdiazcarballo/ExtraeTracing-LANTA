@@ -2,16 +2,16 @@
 
 # Build step
 1. Build Extrae from git repository
-'''shell
+```shell
 git clone https://github.com/bsc-performance-tools/extrae.git
 cd extrae
 #to get libtool in the right toolchain
 module load libxml2/2.11.4-cpeCray-23.03
 module load libtool/2.4.7
 ./bootstrap
-'''
+```
   
-2. Configure command
+3. Configure command
    ```bash
    CC=cc CXX=CC ./configure \
    --build=x86_64-suse-linux \
@@ -30,7 +30,7 @@ module load libtool/2.4.7
    --without-unwind \
    --without-dyninst
    ```
-3. Make and Install
+4. Make and Install
    ```bash
    make -j4
    make install
