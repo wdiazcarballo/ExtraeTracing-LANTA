@@ -30,7 +30,7 @@ module load boost
 
 2. Configure command
 ```bash
-CC=icc CXX=icpc ./configure \
+CC=icx CXX=icpx ./configure \
    --build=x86_64-suse-linux \
    --host=x86_64-suse-linux   \
    --prefix=/scratch/jq90/app/extrae-intel \
