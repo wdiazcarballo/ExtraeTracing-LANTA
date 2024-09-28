@@ -13,6 +13,17 @@ cd extrae
 2. Load the following module
 
 ```bash
+module load intel-compiler/2021.10.0
+module load intel-mkl/2024.2.0
+module load intel-mpi/2021.13.0
+module load binutils/2.36.1
+module load papi/7.0.1
+module load intel-tbb/2021.13.0
+module load cuda/12.5.1
+module load boost
+```
+
+```bash
  1) pbs                        3) intel-mkl/2024.2.0    5) binutils/2.36.1   7) intel-tbb/2021.13.0
  2) intel-compiler/2021.10.0   4) intel-mpi/2021.13.0   6) papi/7.0.1 7) cuda/12.5.1
 ```
@@ -29,7 +40,7 @@ CC=icc CXX=icpc ./configure \
    --enable-pthread \
    --with-binary-type=64 \
    --with-mpi=$INTEL_MPI_ROOT  \
-   --with-xml=/lib64 \
+   --with-xml=/usr \
    --with-binutils=$BINUTILS_ROOT \
    --with-papi=$PAPI_ROOT \
    --with-boost=$BOOST_ROOT \
